@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="box file-box">
+                <div class="file-row">
+                    <div class="label " id="save">
+                        <img title="save" src="/img/Images/save.png" alt="Image not found">
+                        <small>Save</small>
+                    </div>
+                    <div class="label" id="clear">
+                        <img title="clear" src="/img/Images/clear.png" alt="Image not found">
+                        <small>Clear</small>
+                    </div>
+                </div>
+                <span>File</span>
+            </div>
+
+            <div class="box shapes-box">
+                <div class="shapes-row">
+                    <div class="label tool" id="rectangle">
+                        <img src="/img/Images/rectangle.png" title="rectangle" alt="Image not found">
+                        <small>Rectangle</small>
+                    </div>
+                    <div class="label tool" id="circle">
+                        <img src="/img/Images/circle.png" title="circle" alt="Image not found">
+                        <small>Circle</small>
+                    </div>
+                    <div class="label tool" id="triangle">
+                        <img src="/img/Images/triangle.png" title="triangle" alt="Image not found">
+                        <small>Triangle</small>
+                    </div>
+                </div>
+                <div class="shapes-row">
+                    <div class="label tool" id="oval">
+                        <img src="/img/Images/oval.png" title="oval" alt="Image not found">
+                        <small>Oval</small>
+                    </div>
+                    <div class="label tool" id="pentagon">
+                        <img src="/img/Images/pentagon.png" title="pentagon" alt="Image not found">
+                        <small>Pentagon</small>
+                    </div>
+                    <div class="label tool" id="hexagon">
+                        <img src="/img/Images/hexagon.png" title="hexagon" alt="Image not found">
+                        <small>Hexagon</small>
+                    </div>
+                </div>
+                <span>Shapes</span>
+            </div>
+
+            <div class="box tools-box">
+                <div class="tools-row">
+                    <div class="label tool active_tool" id="brush">
+                        <img title="brush" src="/img/Images/brush.png" alt="Image not found">
+                        <small>Brush</small>
+                    </div>
+                    <div class="label tool" id="eraser">
+                        <img title="eraser" src="/img/Images/rubber.png" alt="Image not found">
+                        <small>Eraser</small>
+                    </div>
+                </div>
+                <input type="range" min="1" max="30" id="slider" value="5">
+                <span>Tools</span>
+            </div>
+
+            <div class="box colors-box">
+                <ul class="ul_color_list">
+                    <li class="option selected_color" style="background-color: #000000;"></li>
+                    <li class="option" style="background-color: #ffffff;"></li>
+                    <li class="option" style="background-color: #ff0000;"></li>
+                    <li class="option" style="background-color: #ff6600;"></li>
+                    <li class="option" style="background-color: #ffff00;"></li>
+                    <li class="option" style="background-color: #008000;"></li>
+                    <li class="option" style="background-color: #0000ff;"></li>
+                    <li class="option" style="background-color: #4b0082;"></li>
+                    <li class="option" style="background-color: #ee82ee;"></li>
+                    <li class="option" style="background-color: #a52a2a;"></li>
+                    <li class="option" style="background-color: #d3d3d3;"></li>
+                    <li class="option" style="background-color: #808080;"></li>
+                    <li class="option" style="background-color: #000080;"></li>
+                    <li class="option" style="background-color: #ffa500;"></li>
+                    <li class="option" style="background-color: #800080;"></li>
+                    <li class="option" style="background-color: #00ff00;"></li>
+                    <li class="option" style="background-color: #ff00ff;"></li>
+                    <li class="option">
+                        <input type="color" id="color_picker" value="#4A98F7">
+                    </li>
+                </ul>
+                <span>Colors</span>
+            </div>
+
+            <div class="box check-box">
+                <input type="checkbox" id="colorCheck">
+                <label for="colorCheck">Fill color</label>
+            </div>
+        </div>
+        <div class="draw_area">
+            <canvas></canvas>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
